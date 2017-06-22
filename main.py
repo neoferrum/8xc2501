@@ -10,7 +10,7 @@ from view import TableView
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    array_data = np.random.ranf((1024, 3))
+    array_data = np.random.ranf((1024, 12))
     table_model = TableModel(data=array_data)
     table = TableView()
     table.setModel(table_model)

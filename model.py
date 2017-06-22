@@ -6,6 +6,8 @@ from PyQt5 import QtCore
 
 
 class TableModel(QtCore.QAbstractTableModel):
+    """Simple table model.
+    """
     def __init__(self, *args, **kwargs):
         super().__init__()
         if 'data' in kwargs:
