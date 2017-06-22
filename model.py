@@ -33,6 +33,10 @@ class TableModel(QtCore.QAbstractTableModel):
         else:
             return None
 
-    #def headerData(self):
-        #pass
+    def headerData(self, section, orientation=QtCore.Qt.Horizontal, role=QtCore.Qt.DisplayRole):
+        if role == QtCore.Qt.DisplayRole:
+            if orientation == QtCore.Qt.Horizontal:
+                return str(section)
+            elif orientation == QtCore.Qt.Vertical:
+                return str(section)
 
